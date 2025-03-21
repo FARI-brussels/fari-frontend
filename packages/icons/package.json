@@ -4,25 +4,21 @@
   "description": "Minimal SVG icons for Fari projects",
   "main": "dist/index.js",
   "exports": {
-  ".": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  }
-},
-"types": "dist/types/index.d.ts",
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
     "build:types": "tsc --emitDeclarationOnly",
-    "build": "node src/scripts/generateIconTypes.mjs && vite build && pnpm run build:types",
+    "build": "rm -rf dist && node src/scripts/generateIconTypes.mjs && vite build && pnpm run build:types",
     "dev": "node src/scripts/generateIconTypes.mjs && vite build --watch",
     "generate-types": "node src/scripts/generateIconTypes.mjs",
     "optimize": "svgo -f src -o src"
-  },
-  "dependencies": {
-    "vite-svg-loader": "^5.1.0"
   },
   "devDependencies": {
     "svgo": "^3.0.0",

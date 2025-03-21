@@ -1,6 +1,4 @@
 import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
-import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
 	plugins: [],
@@ -11,5 +9,7 @@ export default defineConfig({
       fileName: 'index',
       formats: ['es']
     },
+    outDir: 'dist',
+    emptyOutDir: false 
   }
 });

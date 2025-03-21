@@ -1,6 +1,22 @@
 /// <reference path="../vite-env.d.ts" />
-import arrowRight from './icons/arrow-right.svg';
-import menu from './icons/menu.svg';
+export { default as Check } from './icons/check.svg'
+export { default as ChevronLeft } from './icons/chevron-left.svg'
+export { default as ChevronRight } from './icons/chevron-right.svg'
+export { default as Cloud } from './icons/cloud.svg'
+export { default as Connect } from './icons/connect.svg'
+export { default as Cross } from './icons/cross.svg'
+export { default as Disconnect } from './icons/disconnect.svg'
+export { default as Drone } from './icons/drone.svg'
+export { default as Erase } from './icons/erase.svg'
+export { default as Menu } from './icons/menu.svg'
+export { default as Overcast } from './icons/overcast.svg'
+export { default as Play } from './icons/play.svg'
+export { default as ResetMap } from './icons/reset-map.svg'
+export { default as Settings } from './icons/settings.svg'
+export { default as SunOutline } from './icons/sun-outline.svg'
+export { default as Sun } from './icons/sun.svg'
+export { default as Temperature } from './icons/temperature.svg'
+export { default as Tooltip } from './icons/tooltip.svg'
+export { default as Undo } from './icons/undo.svg'
 
-export { arrowRight, menu };
 export type { IconName } from './types/Icon';
