@@ -1,0 +1,15 @@
+@mixin class-generator($list: '', $attribute: '', $prefix: '-') {
+  @if $list == '' {
+    @error "You must provide a list to loop through";
+  }
+
+  @if $attribute == '' {
+    @error "You must provide an attribute";
+  }
+
+  @each $item, $value in $list {
+    &#{$prefix}#{$item} {
+      #{$attribute}: $value;
+    }
+  }
+}

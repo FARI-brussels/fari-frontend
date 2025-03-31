@@ -2,28 +2,38 @@
   "name": "@fari/icons",
   "version": "0.1.0",
   "description": "Minimal SVG icons for Fari projects",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "dist/js/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs"
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/svg/index.js"
+    },
+    "./svg": {
+      "types": "./dist/types/svg/index.d.ts",
+      "default": "./dist/svg/index.js"
+    },
+    "./js": {
+      "types": "./dist/types/js/index.d.ts",
+      "default": "./dist/js/index.js"
+    },
+    "./vue": {
+      "types": "./dist/types/vue/index.d.ts",
+      "default": "./dist/vue/index.js"
     }
   },
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "scripts": {
-    "build:types": "tsc --emitDeclarationOnly",
-    "build": "rm -rf dist && node src/scripts/generateIconTypes.mjs && vite build && pnpm run build:types",
-    "dev": "node src/scripts/generateIconTypes.mjs && vite build --watch",
-    "generate-types": "node src/scripts/generateIconTypes.mjs",
-    "optimize": "svgo -f src -o src"
+    "build": "rm -rf dist && node src/scripts/build.js",
+    "optimize": "svgo -f src/svg -o src/svg",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "svgo": "^3.0.0",
     "vite": "^6.2.2",
     "typescript": "^5.0.0"
-  
   }
 }

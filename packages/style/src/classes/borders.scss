@@ -1,0 +1,32 @@
+@use '../variables/borders.scss' as *;
+@use '../mixins/class-generator.scss' as *;
+
+$border-radiuses: (
+  'none': $none,
+  'sm': $border-md,
+  'md': $border-lg
+);
+
+.rounded {
+  border-radius: $border-lg;
+  @include class-generator($list: $border-radiuses, $attribute: 'border-radius');
+}
+
+.rounded-es {
+  border-radius: $border-lg;
+  @include class-generator($list: $border-radiuses, $attribute: 'border-end-start-radius');
+}
+
+.rounded-ee {
+  border-radius: $border-lg;
+  @include class-generator($list: $border-radiuses, $attribute: 'border-end-end-radius');
+}
+.rounded-ss {
+  border-radius: $border-lg;
+  @include class-generator($list: $border-radiuses, $attribute: 'border-start-start-radius');
+}
+
+.rounded-se {
+  border-radius: $border-lg;
+  @include class-generator($list: $border-radiuses, $attribute: 'border-start-end-radius');
+}

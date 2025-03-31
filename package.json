@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm -r dev",
+    "build:packages": "pnpm -r -F '@fari/*' run build",
+    "dev": "concurrently --kill-others  \"pnpm --filter @fari/icons dev\" \"pnpm --filter @fari/playground dev\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +13,8 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.13.11"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "name": "@fari/style",
+  "version": "1.0.0",
+  "description": "FARI style library",
+  "main": "dist/style.css",
+  "style": "dist/style.css",
+  "exports": {
+    ".": "./dist/style.css",
+    "./sass": "./dist/sass/style.scss"
+  },
+  "scripts": {
+      "build": "sass src/index.scss dist/style.css && node build.js",
+      "watch": "sass --watch src/index.scss dist/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.62.0"
+  },
+  "keywords": ["sass", "style", "css", "fari", "design"],
+  "author": "FARI",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ]
+}

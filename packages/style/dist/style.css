@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  color: #f6f6f6;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+textarea {
+  font-family: "Inter", sans-serif;
+}
+
+.color-blue {
+  color: #183e91;
+}
+.color-blue-light {
+  color: #4393de;
+}
+.color-primary {
+  color: #2e4fbf;
+}
+.color-secondary {
+  color: #64d8bf;
+}
+.color-white {
+  color: #f6f6f6;
+}
+.color-gray {
+  color: #ecedf2;
+}
+.color-black {
+  color: #181716;
+}
+.color-red {
+  color: #f00;
+}
+.color-green {
+  color: #00a607;
+}
+
+.bg-color-blue {
+  background-color: #183e91;
+}
+.bg-color-blue-light {
+  background-color: #4393de;
+}
+.bg-color-primary {
+  background-color: #2e4fbf;
+}
+.bg-color-secondary {
+  background-color: #64d8bf;
+}
+.bg-color-white {
+  background-color: #f6f6f6;
+}
+.bg-color-gray {
+  background-color: #ecedf2;
+}
+.bg-color-black {
+  background-color: #181716;
+}
+.bg-color-red {
+  background-color: #f00;
+}
+.bg-color-green {
+  background-color: #00a607;
+}
+
+.stroke-color-blue {
+  stroke: #183e91;
+}
+.stroke-color-blue-light {
+  stroke: #4393de;
+}
+.stroke-color-primary {
+  stroke: #2e4fbf;
+}
+.stroke-color-secondary {
+  stroke: #64d8bf;
+}
+.stroke-color-white {
+  stroke: #f6f6f6;
+}
+.stroke-color-gray {
+  stroke: #ecedf2;
+}
+.stroke-color-black {
+  stroke: #181716;
+}
+.stroke-color-red {
+  stroke: #f00;
+}
+.stroke-color-green {
+  stroke: #00a607;
+}
+
+.fill-color-blue {
+  fill: #183e91;
+}
+.fill-color-blue-light {
+  fill: #4393de;
+}
+.fill-color-primary {
+  fill: #2e4fbf;
+}
+.fill-color-secondary {
+  fill: #64d8bf;
+}
+.fill-color-white {
+  fill: #f6f6f6;
+}
+.fill-color-gray {
+  fill: #ecedf2;
+}
+.fill-color-black {
+  fill: #181716;
+}
+.fill-color-red {
+  fill: #f00;
+}
+.fill-color-green {
+  fill: #00a607;
+}
+
+.border-color-blue {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-blue-light {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-primary {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-secondary {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-white {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-gray {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-black {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-red {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-green {
+  border-style: solid;
+  border-width: 1px;
+}
+.border-color-blue {
+  border-color: #183e91;
+}
+.border-color-blue-light {
+  border-color: #4393de;
+}
+.border-color-primary {
+  border-color: #2e4fbf;
+}
+.border-color-secondary {
+  border-color: #64d8bf;
+}
+.border-color-white {
+  border-color: #f6f6f6;
+}
+.border-color-gray {
+  border-color: #ecedf2;
+}
+.border-color-black {
+  border-color: #181716;
+}
+.border-color-red {
+  border-color: #f00;
+}
+.border-color-green {
+  border-color: #00a607;
+}
+
+.rounded {
+  border-radius: 3rem;
+}
+.rounded-none {
+  border-radius: 0;
+}
+.rounded-sm {
+  border-radius: 1rem;
+}
+.rounded-md {
+  border-radius: 3rem;
+}
+
+.rounded-es {
+  border-radius: 3rem;
+}
+.rounded-es-none {
+  border-end-start-radius: 0;
+}
+.rounded-es-sm {
+  border-end-start-radius: 1rem;
+}
+.rounded-es-md {
+  border-end-start-radius: 3rem;
+}
+
+.rounded-ee {
+  border-radius: 3rem;
+}
+.rounded-ee-none {
+  border-end-end-radius: 0;
+}
+.rounded-ee-sm {
+  border-end-end-radius: 1rem;
+}
+.rounded-ee-md {
+  border-end-end-radius: 3rem;
+}
+
+.rounded-ss {
+  border-radius: 3rem;
+}
+.rounded-ss-none {
+  border-start-start-radius: 0;
+}
+.rounded-ss-sm {
+  border-start-start-radius: 1rem;
+}
+.rounded-ss-md {
+  border-start-start-radius: 3rem;
+}
+
+.rounded-se {
+  border-radius: 3rem;
+}
+.rounded-se-none {
+  border-start-end-radius: 0;
+}
+.rounded-se-sm {
+  border-start-end-radius: 1rem;
+}
+.rounded-se-md {
+  border-start-end-radius: 3rem;
+}
+
+.m-none {
+  margin: 0;
+}
+.m-xs {
+  margin: 0.75rem;
+}
+.m-sm {
+  margin: 1.75rem;
+}
+.m-md {
+  margin: 2rem;
+}
+.m-l {
+  margin: 3rem;
+}
+.m-xl {
+  margin: 4.5rem;
+}
+
+.mt-none {
+  margin-top: 0;
+}
+.mt-xs {
+  margin-top: 0.75rem;
+}
+.mt-sm {
+  margin-top: 1.75rem;
+}
+.mt-md {
+  margin-top: 2rem;
+}
+.mt-l {
+  margin-top: 3rem;
+}
+.mt-xl {
+  margin-top: 4.5rem;
+}
+
+.mr-none {
+  margin-right: 0;
+}
+.mr-xs {
+  margin-right: 0.75rem;
+}
+.mr-sm {
+  margin-right: 1.75rem;
+}
+.mr-md {
+  margin-right: 2rem;
+}
+.mr-l {
+  margin-right: 3rem;
+}
+.mr-xl {
+  margin-right: 4.5rem;
+}
+
+.mb-none {
+  margin-bottom: 0;
+}
+.mb-xs {
+  margin-bottom: 0.75rem;
+}
+.mb-sm {
+  margin-bottom: 1.75rem;
+}
+.mb-md {
+  margin-bottom: 2rem;
+}
+.mb-l {
+  margin-bottom: 3rem;
+}
+.mb-xl {
+  margin-bottom: 4.5rem;
+}
+
+.ml-none {
+  margin-left: 0;
+}
+.ml-xs {
+  margin-left: 0.75rem;
+}
+.ml-sm {
+  margin-left: 1.75rem;
+}
+.ml-md {
+  margin-left: 2rem;
+}
+.ml-l {
+  margin-left: 3rem;
+}
+.ml-xl {
+  margin-left: 4.5rem;
+}
+
+.mx-none {
+  margin-left: 0;
+}
+.mx-xs {
+  margin-left: 0.75rem;
+}
+.mx-sm {
+  margin-left: 1.75rem;
+}
+.mx-md {
+  margin-left: 2rem;
+}
+.mx-l {
+  margin-left: 3rem;
+}
+.mx-xl {
+  margin-left: 4.5rem;
+}
+.mx-none {
+  margin-right: 0;
+}
+.mx-xs {
+  margin-right: 0.75rem;
+}
+.mx-sm {
+  margin-right: 1.75rem;
+}
+.mx-md {
+  margin-right: 2rem;
+}
+.mx-l {
+  margin-right: 3rem;
+}
+.mx-xl {
+  margin-right: 4.5rem;
+}
+
+.my-none {
+  margin-top: 0;
+}
+.my-xs {
+  margin-top: 0.75rem;
+}
+.my-sm {
+  margin-top: 1.75rem;
+}
+.my-md {
+  margin-top: 2rem;
+}
+.my-l {
+  margin-top: 3rem;
+}
+.my-xl {
+  margin-top: 4.5rem;
+}
+.my-none {
+  margin-bottom: 0;
+}
+.my-xs {
+  margin-bottom: 0.75rem;
+}
+.my-sm {
+  margin-bottom: 1.75rem;
+}
+.my-md {
+  margin-bottom: 2rem;
+}
+.my-l {
+  margin-bottom: 3rem;
+}
+.my-xl {
+  margin-bottom: 4.5rem;
+}
+
+.p-none {
+  padding: 0;
+}
+.p-xs {
+  padding: 0.75rem;
+}
+.p-sm {
+  padding: 1.75rem;
+}
+.p-md {
+  padding: 2rem;
+}
+.p-l {
+  padding: 3rem;
+}
+.p-xl {
+  padding: 4.5rem;
+}
+
+.pr-none {
+  padding-right: 0;
+}
+.pr-xs {
+  padding-right: 0.75rem;
+}
+.pr-sm {
+  padding-right: 1.75rem;
+}
+.pr-md {
+  padding-right: 2rem;
+}
+.pr-l {
+  padding-right: 3rem;
+}
+.pr-xl {
+  padding-right: 4.5rem;
+}
+
+.pb-none {
+  padding-bottom: 0;
+}
+.pb-xs {
+  padding-bottom: 0.75rem;
+}
+.pb-sm {
+  padding-bottom: 1.75rem;
+}
+.pb-md {
+  padding-bottom: 2rem;
+}
+.pb-l {
+  padding-bottom: 3rem;
+}
+.pb-xl {
+  padding-bottom: 4.5rem;
+}
+
+.pl-none {
+  padding-left: 0;
+}
+.pl-xs {
+  padding-left: 0.75rem;
+}
+.pl-sm {
+  padding-left: 1.75rem;
+}
+.pl-md {
+  padding-left: 2rem;
+}
+.pl-l {
+  padding-left: 3rem;
+}
+.pl-xl {
+  padding-left: 4.5rem;
+}
+
+.px-none {
+  padding-left: 0;
+}
+.px-xs {
+  padding-left: 0.75rem;
+}
+.px-sm {
+  padding-left: 1.75rem;
+}
+.px-md {
+  padding-left: 2rem;
+}
+.px-l {
+  padding-left: 3rem;
+}
+.px-xl {
+  padding-left: 4.5rem;
+}
+.px-none {
+  padding-right: 0;
+}
+.px-xs {
+  padding-right: 0.75rem;
+}
+.px-sm {
+  padding-right: 1.75rem;
+}
+.px-md {
+  padding-right: 2rem;
+}
+.px-l {
+  padding-right: 3rem;
+}
+.px-xl {
+  padding-right: 4.5rem;
+}
+
+.py-none {
+  padding-top: 0;
+}
+.py-xs {
+  padding-top: 0.75rem;
+}
+.py-sm {
+  padding-top: 1.75rem;
+}
+.py-md {
+  padding-top: 2rem;
+}
+.py-l {
+  padding-top: 3rem;
+}
+.py-xl {
+  padding-top: 4.5rem;
+}
+.py-none {
+  padding-bottom: 0;
+}
+.py-xs {
+  padding-bottom: 0.75rem;
+}
+.py-sm {
+  padding-bottom: 1.75rem;
+}
+.py-md {
+  padding-bottom: 2rem;
+}
+.py-l {
+  padding-bottom: 3rem;
+}
+.py-xl {
+  padding-bottom: 4.5rem;
+}
+
+.font-family-base {
+  font-family: "Inter", sans-serif;
+}
+.font-family-sm {
+  font-family: "Inter", sans-serif;
+}
+
+.font-size-base {
+  font-size: 16px;
+}
+.font-size-body-sm {
+  font-size: 1.125rem;
+}
+.font-size-body {
+  font-size: 1.25rem;
+}
+.font-size-subtitle {
+  font-size: 2rem;
+}
+.font-size-title {
+  font-size: 4.5rem;
+}
+
+.font-weight-thin {
+  font-weight: 100;
+}
+.font-weight-extralight {
+  font-weight: 200;
+}
+.font-weight-light {
+  font-weight: 300;
+}
+.font-weight-medium {
+  font-weight: 500;
+}
+.font-weight-semibold {
+  font-weight: 600;
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+.font-weight-extrabold {
+  font-weight: 800;
+}
+.font-weight-black {
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=style.css.map */

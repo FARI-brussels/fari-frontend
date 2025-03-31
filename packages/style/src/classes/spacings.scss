@@ -1,0 +1,67 @@
+@use '../variables/spacings.scss' as *;
+@use '../mixins/class-generator.scss' as *;
+
+$spacings: (
+  'none': 0,
+  'xs': $space-xs,
+  'sm': $space-sm,
+  'md': $space-md,
+  'l': $space-lg,
+  'xl': $space-xl
+);
+
+.m {
+  @include class-generator($list: $spacings, $attribute: 'margin');
+}
+
+.mt {
+  @include class-generator($list: $spacings, $attribute: 'margin-top');
+}
+
+.mr {
+  @include class-generator($list: $spacings, $attribute: 'margin-right');
+}
+
+.mb {
+  @include class-generator($list: $spacings, $attribute: 'margin-bottom');
+}
+
+.ml {
+  @include class-generator($list: $spacings, $attribute: 'margin-left');
+}
+
+.mx {
+  @include class-generator($list: $spacings, $attribute: 'margin-left');
+  @include class-generator($list: $spacings, $attribute: 'margin-right');
+}
+
+.my {
+  @include class-generator($list: $spacings, $attribute: 'margin-top');
+  @include class-generator($list: $spacings, $attribute: 'margin-bottom');
+}
+
+.p {
+  @include class-generator($list: $spacings, $attribute: 'padding');
+}
+
+.pr {
+  @include class-generator($list: $spacings, $attribute: 'padding-right');
+}
+
+.pb {
+  @include class-generator($list: $spacings, $attribute: 'padding-bottom');
+}
+
+.pl {
+  @include class-generator($list: $spacings, $attribute: 'padding-left');
+}
+
+.px {
+  @include class-generator($list: $spacings, $attribute: 'padding-left');
+  @include class-generator($list: $spacings, $attribute: 'padding-right');
+}
+
+.py {
+  @include class-generator($list: $spacings, $attribute: 'padding-top');
+  @include class-generator($list: $spacings, $attribute: 'padding-bottom');
+}

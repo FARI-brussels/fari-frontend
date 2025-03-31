@@ -1,0 +1,40 @@
+@use '../variables/colors.scss' as *;
+@use '../mixins/class-generator.scss' as *;
+
+$colors: (
+  'blue': $blue,
+  'blue-light': $blue-light,
+  'primary': $primary,
+  'secondary': $secondary,
+  'white': $white,
+  'gray': $gray,
+  'black': $black,
+  'red': $red,
+  'green': $green
+);
+
+.color {
+  @include class-generator($list: $colors, $attribute: 'color');
+}
+
+.bg-color {
+  @include class-generator($list: $colors, $attribute: 'background-color');
+}
+
+.stroke-color {
+  @include class-generator($list: $colors, $attribute: 'stroke');
+}
+
+.fill-color {
+  @include class-generator($list: $colors, $attribute: 'fill');
+}
+
+.border-color {
+  @each $name, $value in $colors {
+    &-#{$name} {
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+  @include class-generator($list: $colors, $attribute: 'border-color');
+}
