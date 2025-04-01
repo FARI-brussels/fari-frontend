@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { generateIconTypes } from './generateIconTypes.js';
 import { fileURLToPath } from 'url';
-import { toCamelCase, toPascalCase } from '@fari-frontend/shared';
+import { toCamelCase, toPascalCase } from '@fari-brussels/shared';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

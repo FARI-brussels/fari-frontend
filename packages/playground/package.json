@@ -1,5 +1,5 @@
 {
-  "name": "@fari-frontend/playground",
+  "name": "@fari-brussels/playground",
   "version": "0.0.2",
   "private": true,
   "type": "module",
@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "vue": "^3.5.13",
-    "@fari-frontend/components": "workspace:*"
+    "@fari-brussels/components": "workspace:*"
   },
   "peerDependencies": {
-        "@fari-frontend/icons": "workspace:*"
+        "@fari-brussels/icons": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

@@ -9,7 +9,7 @@ defineProps<{ dark?: boolean }>()
 </script>
 
 <style scoped lang="scss">
-@use '@fari-frontend/style/sass' as *;
+@use '@fari-brussels/style/sass' as *;
 .container {
   border-radius:  $border-lg;
   background-color: $white;

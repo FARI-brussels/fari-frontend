@@ -1,5 +1,5 @@
 {
-  "name": "@fari-frontend/components",
+  "name": "@fari-brussels/components",
   "description": "FARI components",
   "version": "0.0.3",
   "private": false,
@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "vite",
     "build": "pnpm run build:css && pnpm run build:js && pnpm run build:scss",
-    "build:css": "rm -rf dist && mkdir -p dist && ./node_modules/.bin/sass src/index.scss dist/style.css --load-path node_modules/@fari-frontend/style/dist/sass --verbose --trace || { echo 'Sass failed'; exit 1; }",
+    "build:css": "rm -rf dist && mkdir -p dist && ./node_modules/.bin/sass src/index.scss dist/style.css --load-path node_modules/@fari-brussels/style/dist/sass --verbose --trace || { echo 'Sass failed'; exit 1; }",
     "build:js": "pnpm run type-check && pnpm run build:only",
     "build:only": "vite build",
     "build:scss": "node build-scss.js",
@@ -35,8 +35,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@fari-frontend/icons": "workspace:*",
-    "@fari-frontend/style": "workspace:*",
+    "@fari-brussels/icons": "workspace:*",
+    "@fari-brussels/style": "workspace:*",
     "@vueuse/core": "^13.0.0",
     "sass": "^1.62.0",
     "vue": "^3.5.13"

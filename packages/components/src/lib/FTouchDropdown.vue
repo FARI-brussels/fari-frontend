@@ -37,7 +37,7 @@ import FScaleTransition from './FScaleTransition.vue'
 import { onClickOutside } from '@vueuse/core'
 import type { OnClickOutsideHandler } from '@vueuse/core'
 import FDivider from './FDivider.vue'
-import type { IconName } from '@fari-frontend/icons'
+import type { IconName } from '@fari-brussels/icons'
 
 
 type Location =
@@ -97,7 +97,7 @@ const dropdownContainerClasses = computed(() => {
 </script>
 
 <style scoped lang="scss">
-@use '@fari-frontend/style/sass' as *;
+@use '@fari-brussels/style/sass' as *;
 @use 'sass:color';
 
 .activator {

@@ -25,7 +25,7 @@ const buttonClass = computed(
 </script>
 
 <style scoped lang="scss">
-@use '@fari-frontend/style/sass' as *;
+@use '@fari-brussels/style/sass' as *;
 @use 'sass:color';
 
 .button {

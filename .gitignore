@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.log
+
+# pnpm-specific
+pnpm-lock.yaml  # Optional: include if you want lockfile consistency
+.pnpm-store/
+
+# Local dev files
+*.env
+*.DS_Store  # macOS
+Thumbs.db   # Windows

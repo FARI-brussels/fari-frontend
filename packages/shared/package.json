@@ -1,7 +1,8 @@
 {
-  "name": "@fari-frontend/shared",
+  "name": "@fari-brussels/shared",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "type": "module",
   "scripts": {

@@ -1,7 +1,7 @@
 <script setup>
 
-import { CheckIcon } from '@fari-frontend/icons/vue'
-import { FContainer, FButtonIcon, FDivider, FTouchButton } from '@fari-frontend/components';
+import { CheckIcon } from '@fari-brussels/icons/vue'
+import { FContainer, FButtonIcon, FDivider, FTouchButton } from '@fari-brussels/components';
 </script>
 
 <template>
