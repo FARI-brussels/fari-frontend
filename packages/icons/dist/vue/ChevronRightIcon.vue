@@ -4,5 +4,5 @@
     </script>
 
     <template>
-      <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.7 1.52614L11.3 11.1261L1.7 20.7261" stroke="#454545" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <svg v-bind="$attrs" width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.7 1.52614L11.3 11.1261L1.7 20.7261" stroke="#454545" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 
     </template>

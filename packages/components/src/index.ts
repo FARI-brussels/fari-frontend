@@ -1,4 +1,8 @@
-import MyComponent from './MyComponent.vue';
+import FButtonIcon from './lib/FButtonIcon.vue';
+import FContainer from './lib/FContainer.vue';
+import FDivider from './lib/FDivider.vue';
+import FTouchButton from './lib/FTouchButton.vue';
+import FTouchDropdown from './lib/FTouchDropdown.vue';
 
 import '../dist/style.css'; // Combined styles
 
@@ -9,4 +13,4 @@ if (typeof document !== 'undefined') {
   document.head.appendChild(link);
 }
 
-export { MyComponent };
+export { FButtonIcon, FContainer, FDivider, FTouchButton, FTouchDropdown };

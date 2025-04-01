@@ -7,3 +7,6 @@ export type Color =
   | 'primary'
   | 'secondary'
   | 'blue-light'
+
+
+  export type StrokeColor = Exclude<Color, 'red' | 'green' | 'blue' | 'primary' | 'secondary'>

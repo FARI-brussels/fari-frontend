@@ -1,2 +1,2 @@
-import { DefineComponent } from "vue";
+import type { DefineComponent } from "vue";
 export type FariIconVue = DefineComponent<{ size?: string; color?: string }>;

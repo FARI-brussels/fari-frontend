@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { generateIconTypes } from './generateIconTypes.js';
 import { fileURLToPath } from 'url';
+import { toCamelCase, toPascalCase } from '@fari/shared';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -42,7 +43,7 @@ async function ensureVueTypeFile() {
   } catch {
     await fs.writeFile(
       paths.dist.types.vueTs,
-      `import { DefineComponent } from "vue";\nexport type FariIconVue = DefineComponent<{ size?: string; color?: string }>;`
+      `import type { DefineComponent } from "vue";\nexport type FariIconVue = DefineComponent<{ size?: string; color?: string }>;`
     );
   }
 }
@@ -106,7 +107,7 @@ async function buildIcons() {
     </script>
 
     <template>
-      ${svgContent}
+      ${svgContent.replace('<svg', '<svg v-bind="$attrs"')} 
     </template>`;
     await fs.writeFile(path.join(paths.dist.vue, `${pascalCaseName}Icon.vue`), vueComponent);
     vueExports.push(`export { default as ${pascalCaseName}Icon } from './${pascalCaseName}Icon.vue';`);
@@ -152,14 +153,6 @@ async function buildIcons() {
   await fs.writeFile(path.join(paths.dist.types.root, 'index.d.ts'), typesIndexContent);
 
   console.info('✅ Build complete!');
-}
-
-function toCamelCase(text) {
-  return text.replace(/[-_](\w)/g, (_, c) => c.toUpperCase());
-}
-
-function toPascalCase(text) {
-  return text.replace(/(^\w|[-_](\w))/g, (_, __, c) => (c ? c.toUpperCase() : _.toUpperCase()));
 }
 
 buildIcons().catch((error) => {

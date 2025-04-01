@@ -1,20 +1,20 @@
 <template>
   <button class="button" :class="buttonClassList" :disabled="$props.disabled" :style="buttonStyle">
-    <FIcon
-      :name="name"
-      :color="colors[props.color || 'primary']"
-      :viewBox="viewBox"
-      :width="width"
-      :height="height"
-    />
+    <component :is="icon" v-if="icon" :class="`color-${iconColor}`"/>
   </button>
 </template>
 
 <script lang="ts" setup>
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import type { Color } from '@/types/Color'
-import type { StrokeColor, IconName } from '@/types/Icon'
-import FIcon from '@/components/FIcon.vue'
+import type { StrokeColor } from '@/types/Color'
+// import FIcon from '@/components/FIcon.vue'
+import type { IconName } from '@fari/icons'
+import { watchEffect, shallowRef } from 'vue'
+import type { Component } from 'vue'
+// @ts-ignore
+import { toCamelCase, toPascalCase } from '../../../../utils/string'
+
 
 const colors: { [C in Color]: StrokeColor } = {
   red: 'white',
@@ -29,14 +29,28 @@ const colors: { [C in Color]: StrokeColor } = {
 
 interface Button {
   name: IconName
+  iconColor: Color
   small?: boolean
   disabled?: boolean
   color?: Color
   bordered?: boolean
   onDark?: boolean
 }
-
+const icon = shallowRef<Component | null>(null)
 const props = defineProps<Button>()
+
+
+watchEffect(async () => {
+  if(!props.name)  return
+
+  try {
+    const iconsModule = await import('@fari/icons/vue') as Record<string, Component>;;
+    icon.value = iconsModule[toPascalCase(props.name) + 'Icon'] || null;
+  } catch (error) {
+    console.error(`Failed to load icon: ${props.name}`, error);
+    icon.value = null;
+  }
+});
 
 const buttonClassList = computed(() => {
   const backgroundColor = `bg-color-${props.color || 'primary'}`
@@ -108,8 +122,7 @@ const height = computed(() => {
 </script>
 
 <style scoped lang="scss">
-@use '@/styles/variables/colors.scss' as c;
-@use '@/styles/variables/borders.scss' as b;
+@use '@fari/style/sass' as *;
 @use 'sass:color';
 
 .button {
@@ -121,7 +134,7 @@ const height = computed(() => {
   padding: 0;
   align-items: center;
   justify-content: center;
-  border-radius: b.$rounded;
+  border-radius: $border-lg;
   border: none;
   cursor: pointer;
   &-small {

@@ -1,15 +1,23 @@
 <script setup>
 
 import { CheckIcon } from '@fari/icons/vue'
-import { MyComponent } from '@fari/components';
+import { FContainer, FButtonIcon, FDivider, FTouchButton } from '@fari/components';
 </script>
 
 <template>
   
   <main>
-    <CheckIcon />
-    <MyComponent />
-    <span class="test-component">hii hello </span>
+    <FContainer>
+      <FTouchButton name="check" color="secondary" iconColor="secondary" label="hello">
+        <template #prepend-icon>
+          <CheckIcon color="primary" class="stroke-color-primary"/>
+        </template>
+      </FTouchButton >
+      <FDivider class="bg-color-primary mt-xl"/>
+      <CheckIcon color="primary" class="stroke-color-primary"/>
+      <FButtonIcon name="check" color="primary" iconColor="secondary"/>
+
+    </FContainer>
   </main>
 </template>
 
