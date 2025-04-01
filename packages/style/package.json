@@ -1,6 +1,6 @@
 {
-  "name": "@fari/style",
-  "version": "1.0.1",
+  "name": "@fari-frontend/style",
+  "version": "1.0.2",
   "description": "FARI style library",
   "main": "dist/style.css",
   "style": "dist/style.css",

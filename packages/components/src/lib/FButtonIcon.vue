@@ -9,7 +9,7 @@ import { computed } from 'vue'
 import type { Color } from '@/types/Color'
 import type { StrokeColor } from '@/types/Color'
 // import FIcon from '@/components/FIcon.vue'
-import type { IconName } from '@fari/icons'
+import type { IconName } from '@fari-frontend/icons'
 import { watchEffect, shallowRef } from 'vue'
 import type { Component } from 'vue'
 // @ts-ignore
@@ -44,7 +44,7 @@ watchEffect(async () => {
   if(!props.name)  return
 
   try {
-    const iconsModule = await import('@fari/icons/vue') as Record<string, Component>;;
+    const iconsModule = await import('@fari-frontend/icons/vue') as Record<string, Component>;;
     icon.value = iconsModule[toPascalCase(props.name) + 'Icon'] || null;
   } catch (error) {
     console.error(`Failed to load icon: ${props.name}`, error);
@@ -122,7 +122,7 @@ const height = computed(() => {
 </script>
 
 <style scoped lang="scss">
-@use '@fari/style/sass' as *;
+@use '@fari-frontend/style/sass' as *;
 @use 'sass:color';
 
 .button {

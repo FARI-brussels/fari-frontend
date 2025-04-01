@@ -1,12 +1,13 @@
 <script setup>
 
-import { CheckIcon } from '@fari/icons/vue'
-import { FContainer, FButtonIcon, FDivider, FTouchButton } from '@fari/components';
+import { CheckIcon } from '@fari-frontend/icons/vue'
+import { FContainer, FButtonIcon, FDivider, FTouchButton } from '@fari-frontend/components';
 </script>
 
 <template>
   
   <main>
+    <CheckIcon color="primary" class="stroke-color-primary"/>
     <FContainer>
       <FTouchButton name="check" color="secondary" iconColor="secondary" label="hello">
         <template #prepend-icon>
@@ -14,7 +15,6 @@ import { FContainer, FButtonIcon, FDivider, FTouchButton } from '@fari/component
         </template>
       </FTouchButton >
       <FDivider class="bg-color-primary mt-xl"/>
-      <CheckIcon color="primary" class="stroke-color-primary"/>
       <FButtonIcon name="check" color="primary" iconColor="secondary"/>
 
     </FContainer>

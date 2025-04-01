@@ -3,8 +3,8 @@
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "build:packages": "pnpm -r -F '@fari/*' run build",
-    "dev": "concurrently --kill-others \"pnpm --filter @fari/components dev\" \"pnpm --filter @fari/playground dev\"",
+    "build:packages": "pnpm -r -F '@fari-frontend/*' run build",
+    "dev": "concurrently --kill-others \"pnpm --filter @fari-frontend/components dev\" \"pnpm --filter @fari-frontend/playground dev\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

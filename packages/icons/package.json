@@ -1,6 +1,6 @@
 {
-  "name": "@fari/icons",
-  "version": "0.1.1",
+  "name": "@fari-frontend/icons",
+  "version": "0.1.2",
   "description": "Minimal SVG icons for Fari projects",
   "type": "module",
   "main": "dist/js/index.js",
@@ -32,7 +32,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@fari/shared": "workspace:*"
+    "@fari-frontend/shared": "workspace:*"
   },
   "peerDependencies": {
     "vue": "^3.5.13"

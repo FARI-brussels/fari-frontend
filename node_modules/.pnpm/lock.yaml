@@ -18,10 +18,10 @@ importers:
 
   packages/components:
     dependencies:
-      '@fari/icons':
+      '@fari-frontend/icons':
         specifier: workspace:*
         version: link:../icons
-      '@fari/style':
+      '@fari-frontend/style':
         specifier: workspace:*
         version: link:../style
       '@vueuse/core':
@@ -88,7 +88,7 @@ importers:
 
   packages/icons:
     dependencies:
-      '@fari/shared':
+      '@fari-frontend/shared':
         specifier: workspace:*
         version: link:../shared
       vue:
@@ -107,10 +107,10 @@ importers:
 
   packages/playground:
     dependencies:
-      '@fari/components':
+      '@fari-frontend/components':
         specifier: workspace:*
         version: link:../components
-      '@fari/icons':
+      '@fari-frontend/icons':
         specifier: workspace:*
         version: link:../icons
       vue:
