@@ -1,59 +1,4 @@
-# FARI Icons
-
-A versatile icons library that provides raw SVG icons, JavaScript-based icons, and Vue components.
-
----
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Raw SVG](#raw-svg)
-  - [JavaScript Icons](#javascript-icons)
-  - [Vue Components](#vue-components)
-  - [Vue Component Example](#vue-component-example)
-
----
-
-## Installation
-
-```sh
-npm i @fari-brussels/icons
-```
-
-## Usage
-
-### Raw SVG
-
-```js
-import { Check } from '@fari-brussels/icons/svg';
-```
-
-### JavaScript Icons
-
-```js
-import { Check } from '@fari-brussels/icons/js';
-```
-
-### Vue Components
-
-```js
-import { CheckIcon } from '@fari-brussels/icons/vue';
-```
-
-### Vue Component Example
-
-```vue
-<template>
-  <CheckIcon color="primary" class="stroke-color-primary" />
-</template>
-```
-
----
-
-This documentation provides an overview of how to use FARI Icons in different formats, ensuring flexibility across various projects.
-
-
+# FARI Style
 
 A CSS library that exports both plain CSS and Sass (SCSS).
 
@@ -61,17 +6,10 @@ A CSS library that exports both plain CSS and Sass (SCSS).
 
 ## Table of Contents
 
-- [FARI Icons](#fari-icons)
+- [FARI Style](#fari-style)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-    - [Raw SVG](#raw-svg)
-    - [JavaScript Icons](#javascript-icons)
-    - [Vue Components](#vue-components)
-    - [Vue Component Example](#vue-component-example)
-  - [Table of Contents](#table-of-contents-1)
-  - [Installation](#installation-1)
-  - [Usage](#usage-1)
     - [Plain CSS](#plain-css)
     - [Sass](#sass)
   - [Classes](#classes)
