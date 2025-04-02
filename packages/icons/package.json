@@ -1,6 +1,6 @@
 {
   "name": "@fari-brussels/icons",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "description": "Minimal SVG icons for Fari projects",
   "type": "module",
