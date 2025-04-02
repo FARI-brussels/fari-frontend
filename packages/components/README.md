@@ -1,39 +1,37 @@
-# components
+# FARI Components
 
-This template should help get you started developing with Vue 3 in Vite.
+A component library for FARI, written in Vue 3.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Table of Contents
 
-## Type Support for `.vue` Imports in TS
+- [FARI Components](#fari-components)
+  - [Table of Contents](#table-of-contents)
+  - [Project Setup](#project-setup)
+  - [Usage](#usage)
+  - [Components \& Props](#components--props)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
 ## Project Setup
 
 ```sh
-pnpm install
+npm i @fari-brussels/components
 ```
 
-### Compile and Hot-Reload for Development
+## Usage
 
-```sh
-pnpm dev
+Import the component in your `main.ts` or `main.js`:
+
+```js
+import { FContainer } from '@fari-brussels/components';
 ```
 
-### Type-Check, Compile and Minify for Production
+## Components & Props
 
-```sh
-pnpm build
-```
+_List of components and their props coming soon..._
 
-### Lint with [ESLint](https://eslint.org/)
+---
 
-```sh
-pnpm lint
-```
+
